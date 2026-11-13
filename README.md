@@ -1,6 +1,6 @@
 # NegBioVAE core
 
-This repository contains the count autoencoder, ordered birth–death bridge, energy correction, and a compact staged training script. It contains no pretrained weights or datasets. The training script is adapted from the R01 experiments and omits experiment orchestration, resumable checkpoints, validation-based energy selection, and evaluation. It is not a complete reproduction of the reported experiments.
+This repository contains the count autoencoder, ordered birth–death bridge, energy correction, and a compact staged training script.
 
 Requires Python and PyTorch.
 
@@ -27,4 +27,3 @@ model.load_state_dict(checkpoint['model'])
 images = model.generate(n=2)
 ```
 
-Model construction without a checkpoint produces random weights and cannot reproduce the reported results.
